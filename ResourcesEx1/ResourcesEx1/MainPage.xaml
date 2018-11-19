@@ -4,11 +4,20 @@
              xmlns:local="clr-namespace:ResourcesEx1"
              x:Class="ResourcesEx1.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="Red"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black">
+            <Label Text="Mobile Programming 1"/>
+            <Label Text="Resources and Styles"/>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>
