@@ -3,21 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:ResourcesEx1"
              x:Class="ResourcesEx1.MainPage">
-
-    <ContentPage.Resources>
-        <ResourceDictionary>
+    
+    <!--<ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS">0,30,0,0</On>
+        </OnPlatform>
+    </ContentPage.Padding>-->
+    
+    <!--<ContentPage.Resources>
+        <ResourceDictionary>            
+            <OnPlatform x:Key="myKey" x:TypeArguments="Thickness">
+                <On Platform="iOS" Value="0,30,0,0"/>
+                <On Platform="Android" Value="0"/>
+            </OnPlatform>
             <Style TargetType="Label">
                 <Setter Property="TextColor" Value="Red"/>
                 <Setter Property="FontSize" Value="Medium"/>
                 <Setter Property="HorizontalTextAlignment" Value="Center"/>
             </Style>
         </ResourceDictionary>
-    </ContentPage.Resources>
-
+    </ContentPage.Resources>-->
+    
     <ContentPage.Content>
-        <StackLayout BackgroundColor="Black">
-            <Label Text="Mobile Programming 1"/>
-            <Label Text="Resources and Styles"/>
+        <StackLayout BackgroundColor="Black" Padding="{DynamicResource DefaultStackLayout}">            
+            <Label Style="{DynamicResource DefaultTitle}" Text="Eskisehir Technical University" />
+            <Label Style="{DynamicResource DefaultTitle}" Text="Mobile Programming 1"/>
+            <Label Style="{DynamicResource DefaultTitle}" Text="Resources and Styles"/>
+
+            <Editor Style="{DynamicResource DefaultEditor}"/>
+            <Button Style="{DynamicResource DefaultButton}"
+                    Text="Change Theme"
+                    Clicked="Button_Clicked" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

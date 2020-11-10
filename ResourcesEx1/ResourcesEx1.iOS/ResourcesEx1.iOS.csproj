@@ -25,8 +25,9 @@
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
     <MtouchArch>x86_64</MtouchArch>
-    <MtouchLink>None</MtouchLink>
+    <MtouchLink>SdkOnly</MtouchLink>
     <MtouchDebug>true</MtouchDebug>
+    <MtouchSdkVersion>12.1</MtouchSdkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
     <DebugType>none</DebugType>
@@ -152,7 +153,7 @@
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
     <ProjectReference Include="..\ResourcesEx1\ResourcesEx1.csproj">
-      <Project>{F17E7536-2E3D-4DFD-863A-AEA86A22D59B}</Project>
+      <Project>{964989CB-CD50-4BA7-ABBF-204B8C54E8B8}</Project>
       <Name>ResourcesEx1</Name>
     </ProjectReference>
   </ItemGroup>

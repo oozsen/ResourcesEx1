@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
@@ -92,7 +91,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ResourcesEx1\ResourcesEx1.csproj">
-      <Project>{F17E7536-2E3D-4DFD-863A-AEA86A22D59B}</Project>
+      <Project>{964989CB-CD50-4BA7-ABBF-204B8C54E8B8}</Project>
       <Name>ResourcesEx1</Name>
     </ProjectReference>
   </ItemGroup>

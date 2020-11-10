@@ -13,5 +13,17 @@ namespace ResourcesEx1
 		{
 			InitializeComponent();
 		}
-	}
+
+        void Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+			Application.Current.Resources["DefaultTitle"] =
+				Application.Current.Resources["NewTitle"];
+			Application.Current.Resources["DefaultButton"] =
+				Application.Current.Resources["NewButton"];
+			Application.Current.Resources["DefaultStackLayout"] =
+				Application.Current.Resources["NewStackLayout"];
+			Application.Current.Resources["DefaultEditor"] =
+				Application.Current.Resources["NewEditor"];
+		}
+    }
 }

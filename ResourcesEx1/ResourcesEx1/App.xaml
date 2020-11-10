@@ -3,6 +3,77 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ResourcesEx1.App">
 	<Application.Resources>
-    
+    <ResourceDictionary>            
+            <OnPlatform x:Key="myKey" x:TypeArguments="Thickness">
+                <On Platform="iOS" Value="0,30,0,0"/>
+                <On Platform="Android" Value="0"/>
+            </OnPlatform>
+            <!--<Style TargetType="Label">
+                <Setter Property="TextColor" Value="Red"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>-->
+
+        <!-- Start Theme Resources -->
+            <Style TargetType="Label" x:Key="DefaultTitle">
+                <Setter Property="FontSize" Value="35"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="Red"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Start"/>
+            </Style>
+
+            <Style TargetType="Button" x:Key="DefaultButton">
+                <Setter Property="FontSize" Value="15"/>
+                <Setter Property="BackgroundColor" Value="Red"/>
+                <Setter Property="TextColor" Value="Black"/>            
+                <Setter Property="VerticalOptions" Value="End"/>
+            </Style>
+
+            <Style TargetType="StackLayout" x:Key="DefaultStackLayout">
+                <Setter Property="Padding" Value="10"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="Opacity" Value=".8"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+            </Style>
+
+            <Style TargetType="Editor" x:Key="DefaultEditor">
+                <Setter Property="FontAttributes" Value="Italic"/>
+                <Setter Property="TextColor" Value="Red"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            </Style>
+ <!-- End Theme Resources-->
+
+ <!-- Start New Theme Resources -->
+            <Style TargetType="Label" x:Key="NewTitle">
+                <Setter Property="FontSize" Value="35"/>               
+                <Setter Property="TextColor" Value="Blue"/>
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="VerticalOptions" Value="Start"/>
+            </Style>
+
+            <Style TargetType="Button" x:Key="NewButton">
+                <Setter Property="FontSize" Value="25"/>
+                <Setter Property="BackgroundColor" Value="Yellow"/>
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="VerticalOptions" Value="End"/>
+            </Style>
+
+            <Style TargetType="StackLayout" x:Key="NewStackLayout">
+                <Setter Property="Padding" Value="15"/>
+                <Setter Property="BackgroundColor" Value="White"/>
+                <Setter Property="Opacity" Value=".5"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+            </Style>
+
+            <Style TargetType="Editor" x:Key="NewEditor">
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="TextColor" Value="Blue"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            </Style>
+  <!-- End New Theme Resources-->
+        </ResourceDictionary>
 	</Application.Resources>
 </Application>
